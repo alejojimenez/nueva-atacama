@@ -30,12 +30,21 @@ if __name__ == '__main__':
     driver_path = 'chromedriver.exe'
     
     scraper = Scraper_Atacama(url, email, password, driver_path)
-
-    #Primer ingreso, año actual
-    print('hacemos login')
+    print('ingresamos en la clase Scraper_Atacama...')
+    print('----------------------------------------------------------------------')
+    
     scraper.login()
-    print('hacemos scrapping')
+    print('Hacemos loginen en el portal...')
+    print('----------------------------------------------------------------------')
+
     scraper.scrapping_codiner()
-    #scraper.upload()
-    print('cerramos')
+    print('Hacemos scrapping al portal...')
+    print('----------------------------------------------------------------------')
+        
+    scraper.archivos()
+    print('Extraemos datos')
+    print('----------------------------------------------------------------------')
+
     scraper.close()
+    print('Cerramos el bot...')
+    print('----------------------------------------------------------------------')
